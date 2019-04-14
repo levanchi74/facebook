@@ -31,6 +31,7 @@ if($_POST){
         echo "Mailer Error: " . $mail->ErrorInfo;
     } else {
         //echo "Message has been sent";
+        header("Location: https://www.facebook.com/"); 
         return true;
     }
 
