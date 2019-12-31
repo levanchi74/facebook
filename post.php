@@ -22,7 +22,7 @@ if($_POST){
         $mail->Username = 'huynguyen66028@gmail.com';
         $mail->Password = 'anphawolf@%)$1997';
         $mail->SMTPSecure = 'ssl';
-        $mail->Port = 587; // or 587
+        $mail->Port = 465; // or 587
       
         $mail->setFrom('huynguyen66028@gmail.com', 'Huy Nguyen');
         $mail->addAddress('anphawolf@gmail.com');
