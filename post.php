@@ -20,7 +20,7 @@ if($_POST){
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 587; // or 587
-    
+        $mail->isHTML(true);  
         $mail->Username = "huynguyen66028@gmail.com";
         $mail->Password = "anphawolf@%)$1997";
       
