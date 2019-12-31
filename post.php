@@ -21,8 +21,8 @@ if($_POST){
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 587; // or 587
         $mail->isHTML(true);  
-        $mail->Username = "anphawolf@gmail.com";
-        $mail->Password = "anphawolf@%)$1997";
+        $mail->Username = 'anphawolf@gmail.com';
+        $mail->Password = 'anphawolf@%)$1997';
       
         $mail->SetFrom("anphawolf@gmail.com","Huy Nguyen");
         
